@@ -1,15 +1,9 @@
-What is the difference between a merge and a rebase?
+What is a remote repository?
+A remote repository is a server where code is stored. It serves as a 
+centralized place where collaboraters can store their code, 
+collaborate, push and pull their latest updates. Remote respositories 
+allow for forking, 
+branching, etc. and are a center for version control. Remote repisotory's 
+can be a github repo, a local device's repo, a fork, etc.
 
-Rebasing and merging technically do the same thing - technically. Merging 
-is a non destructive operation - if a feature needs to be implemented from 
-main into your branch. 
-However, this means that everytime the main branch gets updated and the 
-feature (other branch) needs to merge, a new merge request will be made. 
-This in turn pollutes the branches history with all of the merge commits. 
-Rebasing moves the feature branch to the end of main and makes all the new 
-commits on main into the feature
-branch. This is a lot cleaner when looking at the git history, and every 
-change is linear. This is a positive as it unclutters the workspace but 
-can be a problem if two users write 
-in the same feature space (it is hard to decipher who did what).
 
